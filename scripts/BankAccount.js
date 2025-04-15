@@ -30,10 +30,11 @@ class BankAccount {
       }
     
     getSummary() {
-        
+        console.log(`${this.ownerName}'s balance is $${this.balance}`); // O(1)
       }
     
     printHistory() {
-
+        console.log(`${this.ownerName}'s Transaction History:`); // O(1)
+        this.history.forEach((entry) => console.log(entry));     // O(n)
       }
     }
