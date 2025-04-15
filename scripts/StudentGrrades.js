@@ -28,3 +28,16 @@ function getLetterGrade(average) {
     if (average >= 60) return 'D'; // O(1)
     return 'F'; // O(1)
 }
+
+function printAllStudents() {
+    students.forEach(student => { // O(n)
+      const avg = calculateAverage(student.grades); // O(n)
+      const grade = getLetterGrade(avg); // O(1)
+      console.log('---')
+      console.log(`Name: ${student.name}`)
+      console.log(`Grades: [${student.grades.join(', ')}]`); // O(1)
+      console.log(`Average: ${avg.toFixed(2)}`); // O(1)
+      console.log(`Letter Grade: ${grade}`); // O(1)
+      console.log('---'); // O(1)
+    });
+  }
