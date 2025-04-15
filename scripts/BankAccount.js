@@ -20,7 +20,13 @@ class BankAccount {
       }
     
     transferTo(anotherAccount, amount) {
-       
+        if (this.balance >= amount) {
+            this.withdraw(amount);             // O(1)
+            anotherAccount.deposit(amount);    // O(1)
+            this.history.push(`Transferred $${amount} to ${anotherAccount.ownerName}`); // O(1)
+          } else {
+            console.log("Insufficient balance for transfer."); // O(1)
+          }
       }
     
     getSummary() {
