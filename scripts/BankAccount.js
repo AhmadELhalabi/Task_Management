@@ -7,13 +7,12 @@ class BankAccount {
        
       }
     
-     withdraw(amount) {
+    withdraw(amount) {
        
       }
     
     transferTo(anotherAccount, amount) {
        
-        
       }
     
     getSummary() {
@@ -21,5 +20,6 @@ class BankAccount {
       }
     
     printHistory() {
+
       }
     }
