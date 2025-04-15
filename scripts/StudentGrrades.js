@@ -41,3 +41,9 @@ function printAllStudents() {
       console.log('---'); // O(1)
     });
   }
+
+addStudent("Ahmad", 28, "Lebanon", [100, 100, 100]); // O(1)
+addStudent("Bob", 20 , "Italy", [70, 68, 72]);   // O(1)
+addStudent("John", 22, "span", [90, 85, 92]) // O(1)
+
+printAllStudents();
