@@ -37,4 +37,16 @@ class BankAccount {
         console.log(`${this.ownerName}'s Transaction History:`); // O(1)
         this.history.forEach((entry) => console.log(entry));     // O(n)
       }
-    }
+}
+
+const acc1 = new BankAccount("John", 500);  // O(1)
+const acc2 = new BankAccount("Sara", 300);  // O(1)
+
+acc1.deposit(100);        // O(1)
+acc1.withdraw(50);        // O(1)
+acc1.transferTo(acc2, 200); // O(1)
+
+acc1.getSummary();        // O(1)
+acc2.getSummary();        // O(1)
+
+acc1.printHistory();      // O(n)
