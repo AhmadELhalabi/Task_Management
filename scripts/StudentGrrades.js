@@ -16,7 +16,7 @@ function greetStudent(student) {
   }
 
 function calculateAverage(grades) {
-    const total = grades.reduce((sum, grade) => sum + grade, 0); // O(n)
+    const total = grades.reduce((sum, grade) => sum + grade, 0); // O(n) // array method 
     return total / grades.length; // O(1)
   }
   
@@ -30,7 +30,7 @@ function getLetterGrade(average) {
 }
 
 function printAllStudents() {
-    students.forEach(student => { // O(n)
+    students.forEach(student => { // O(n) // array method 
       const avg = calculateAverage(student.grades); // O(n)
       const grade = getLetterGrade(avg); // O(1)
       console.log('---')
