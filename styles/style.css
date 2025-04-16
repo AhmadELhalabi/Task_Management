@@ -76,3 +76,42 @@ h1 {
     font-size: smaller;
     color : green 
   }
+
+.task-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+
+.task-label {
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+
+.done-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
