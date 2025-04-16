@@ -17,7 +17,7 @@ function addTask() {
         taskLabel.textContent = taskText;
         taskLabel.classList.add('task-label');
 
-
+      // Create "Mark as Done" button
         const doneBtn = document.createElement('button');
         doneBtn.textContent = 'Mark as Done';
         doneBtn.classList.add('done-btn')
@@ -27,6 +27,7 @@ function addTask() {
         taskLabel.classList.add('done');
         });
 
+      // Create "Delete" button
         const deleteBtn = document.createElement('button');
         deleteBtn.textContent = 'Delete';
         deleteBtn.classList.add('delete-btn'); 
