@@ -35,5 +35,15 @@ function addTask() {
           console.log(`Task ${taskText} deleted`);
           container.remove();
         });
+
+     container.appendChild(taskLabel);
+     container.appendChild(doneBtn);
+     container.appendChild(deleteBtn);
+     taskList.appendChild(container);
+
+     
+     taskInput.value =''; 
       }
     }
+
+    addBtn.addEventListener('click', addTask);
