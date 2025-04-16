@@ -17,7 +17,7 @@ function addTask() {
         taskLabel.textContent = taskText;
         taskLabel.classList.add('task-label');
 
-        // Create "Mark as Done" button
+
         const doneBtn = document.createElement('button');
         doneBtn.textContent = 'Mark as Done';
         doneBtn.classList.add('done-btn')
@@ -26,6 +26,14 @@ function addTask() {
         console.log(`Task ${taskText} marked as done`);
         taskLabel.classList.add('done');
         });
-     
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.classList.add('delete-btn'); 
+    
+        deleteBtn.addEventListener('click', () => {
+          console.log(`Task ${taskText} deleted`);
+          container.remove();
+        });
       }
     }
