@@ -16,6 +16,16 @@ function addTask() {
         const taskLabel = document.createElement('span');
         taskLabel.textContent = taskText;
         taskLabel.classList.add('task-label');
-    
+
+        // Create "Mark as Done" button
+        const doneBtn = document.createElement('button');
+        doneBtn.textContent = 'Mark as Done';
+        doneBtn.classList.add('done-btn')
+     
+        doneBtn.addEventListener('click', () => {
+        console.log(`Task ${taskText} marked as done`);
+        taskLabel.classList.add('done');
+        });
+     
       }
     }
